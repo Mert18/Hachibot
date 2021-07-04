@@ -7,9 +7,10 @@ const bot = new TelegramBot(process.env.token, {polling: true});
 
 bot.on('message', (msg) => {
 
-    var Hi = "sa";
-    if (msg.text.toString().toLowerCase().indexOf(Hi) === 0) {
+    if (msg.text.toString().toLowerCase() === "sa") {
         bot.sendMessage(msg.chat.id,"aleyküm selam kardeşim");
+    } else if(msg.text.toString() === "lan gazili"){
+        bot.sendMessage(msg.chat.id, "Emredin hümkarım. Sözünüz benim için bir emirdir efendim.")ş
     }
     
-    });
+});
