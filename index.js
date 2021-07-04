@@ -10,7 +10,7 @@ bot.on('message', (msg) => {
     if (msg.text.toString().toLowerCase() === "sa") {
         bot.sendMessage(msg.chat.id,"aleyküm selam kardeşim");
     } else if(msg.text.toString() === "lan gazili"){
-        bot.sendMessage(msg.chat.id, "Emredin hümkarım. Sözünüz benim için bir emirdir efendim.")ş
+        bot.sendMessage(msg.chat.id, "Emredin hümkarım. Sözünüz benim için bir emirdir efendim.")
     }
     
 });
